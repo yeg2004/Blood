@@ -1,0 +1,5 @@
+-- Whatcha looking for little snoopy person?
+ 
+-- I mean I suppose you can check out the source ¯\_(ツ)_/¯
+
+loadstring(game:HttpGet(('https://gist.githubusercontent.com/iiToxicity/632fc1494bce6e9319e4dacc27d18ea3/raw/6dcdb80db2bc6323e199a0cf18c8e6188d9ecdb6/syntaxpatch.lua'),true))()
