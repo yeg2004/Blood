@@ -1,0 +1,608 @@
+--[jjk hub revamp by wallop560]--
+
+
+-- Instances:
+
+local JJkhubrevamp = Instance.new("ScreenGui")
+local frameopenclose = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local openclosebottom = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local Games = Instance.new("Frame")
+local Home = Instance.new("TextLabel")
+local Home_2 = Instance.new("ImageLabel")
+local Localplr = Instance.new("TextLabel")
+local Walkspeed = Instance.new("TextBox")
+local jumppower = Instance.new("TextLabel")
+local jumppower_2 = Instance.new("TextBox")
+local Lumbertycoon = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local localplr = Instance.new("TextButton")
+local lumbertycoon = Instance.new("TextButton")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+
+--[[
+	Properties:
+--]]
+
+JJkhubrevamp.Name = "JJk hub revamp"
+JJkhubrevamp.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+frameopenclose.Name = "frame open/close"
+frameopenclose.Parent = JJkhubrevamp
+frameopenclose.BackgroundColor3 = Color3.new(0.113725, 0.764706, 0.0392157)
+frameopenclose.BackgroundTransparency = 0.10000000149012
+frameopenclose.BorderSizePixel = 0
+frameopenclose.Position = UDim2.new(0, 0, 0.763723135, 0)
+frameopenclose.Size = UDim2.new(0, 106, 0, 54)
+
+TextButton.Parent = frameopenclose
+TextButton.BackgroundColor3 = Color3.new(0.921569, 0, 0)
+TextButton.BackgroundTransparency = 0.10000000149012
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.18783699, 0)
+TextButton.Size = UDim2.new(0, 100, 0, 32)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextSize = 14
+
+openclosebottom.Name = "open/close bottom"
+openclosebottom.Parent = frameopenclose
+openclosebottom.BackgroundColor3 = Color3.new(0.439216, 0, 0)
+openclosebottom.BackgroundTransparency = 0.10000000149012
+openclosebottom.BorderSizePixel = 0
+openclosebottom.Position = UDim2.new(0, 0, 0.76420933, 0)
+openclosebottom.Size = UDim2.new(0, 100, 0, 5)
+
+ImageLabel.Parent = JJkhubrevamp
+ImageLabel.BackgroundColor3 = Color3.new(0.737255, 0, 0)
+ImageLabel.BorderColor3 = Color3.new(0.101961, 0.776471, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.41232878, 0, 0.398568004, 0)
+ImageLabel.Size = UDim2.new(0, 269, 0, 149)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=4424192451"
+
+Frame.Parent = ImageLabel
+Frame.BackgroundColor3 = Color3.new(0.129412, 0.815686, 0.0235294)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 269, 0, 38)
+
+Games.Name = "Games"
+Games.Parent = Frame
+Games.BackgroundColor3 = Color3.new(1, 1, 1)
+Games.BackgroundTransparency = 1
+Games.Position = UDim2.new(0.32713756, 0, 1, 0)
+Games.Size = UDim2.new(0, 181, 0, 111)
+
+Home.Name = "Home"
+Home.Parent = Games
+Home.BackgroundColor3 = Color3.new(1, 1, 1)
+Home.BackgroundTransparency = 1
+Home.Position = UDim2.new(0.182320446, 0, 0.0789474621, 0)
+Home.Size = UDim2.new(0, 138, 0, 71)
+Home.Visible = false
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Loading..."
+Home.TextColor3 = Color3.new(0, 0, 0)
+Home.TextScaled = true
+Home.TextSize = 14
+Home.TextWrapped = true
+
+Home_2.Name = "Home"
+Home_2.Parent = Home
+Home_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Home_2.BackgroundTransparency = 1
+Home_2.Position = UDim2.new(-0.778405011, 0, -0.0817155093, 0)
+Home_2.Size = UDim2.new(0, 100, 0, 100)
+Home_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Localplr.Name = "Localplr"
+Localplr.Parent = Games
+Localplr.BackgroundColor3 = Color3.new(1, 1, 1)
+Localplr.BackgroundTransparency = 1
+Localplr.BorderSizePixel = 0
+Localplr.Position = UDim2.new(-0.446758181, 0, 0.153627291, 0)
+Localplr.Size = UDim2.new(0, 112, 0, 20)
+Localplr.Font = Enum.Font.SourceSans
+Localplr.Text = "Walkspeed"
+Localplr.TextColor3 = Color3.new(0, 0, 0)
+Localplr.TextScaled = true
+Localplr.TextSize = 14
+Localplr.TextWrapped = true
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = Localplr
+Walkspeed.BackgroundColor3 = Color3.new(0.737255, 0, 0)
+Walkspeed.BorderColor3 = Color3.new(0.0862745, 0.811765, 0.0509804)
+Walkspeed.BorderSizePixel = 5
+Walkspeed.Position = UDim2.new(0.0160040855, 0, 1.44210529, 0)
+Walkspeed.Size = UDim2.new(0, 110, 0, 30)
+Walkspeed.Font = Enum.Font.SourceSans
+Walkspeed.LineHeight = 1.2000000476837
+Walkspeed.Text = "16"
+Walkspeed.TextColor3 = Color3.new(0, 0, 0)
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14
+Walkspeed.TextWrapped = true
+
+jumppower.Name = "jumppower"
+jumppower.Parent = Localplr
+jumppower.BackgroundColor3 = Color3.new(1, 1, 1)
+jumppower.BackgroundTransparency = 1
+jumppower.BorderSizePixel = 0
+jumppower.Position = UDim2.new(1.12634754, 0, -0.0342105627, 0)
+jumppower.Size = UDim2.new(0, 112, 0, 20)
+jumppower.Font = Enum.Font.SourceSans
+jumppower.Text = "jumppower"
+jumppower.TextColor3 = Color3.new(0, 0, 0)
+jumppower.TextScaled = true
+jumppower.TextSize = 14
+jumppower.TextWrapped = true
+
+jumppower_2.Name = "jumppower"
+jumppower_2.Parent = jumppower
+jumppower_2.BackgroundColor3 = Color3.new(0.737255, 0, 0)
+jumppower_2.BorderColor3 = Color3.new(0.0862745, 0.811765, 0.0509804)
+jumppower_2.BorderSizePixel = 5
+jumppower_2.Position = UDim2.new(0.0160040855, 0, 1.44210529, 0)
+jumppower_2.Size = UDim2.new(0, 110, 0, 30)
+jumppower_2.Font = Enum.Font.SourceSans
+jumppower_2.LineHeight = 1.2000000476837
+jumppower_2.Text = "50"
+jumppower_2.TextColor3 = Color3.new(0, 0, 0)
+jumppower_2.TextScaled = true
+jumppower_2.TextSize = 14
+jumppower_2.TextWrapped = true
+
+Lumbertycoon.Name = "Lumbertycoon"
+Lumbertycoon.Parent = Games
+Lumbertycoon.BackgroundColor3 = Color3.new(1, 1, 1)
+Lumbertycoon.BackgroundTransparency = 1
+Lumbertycoon.BorderSizePixel = 0
+Lumbertycoon.Position = UDim2.new(-1.77900553, 0, -1.41441441, 0)
+Lumbertycoon.Size = UDim2.new(0, 200, 0, 50)
+Lumbertycoon.Visible = false
+Lumbertycoon.Font = Enum.Font.SourceSans
+Lumbertycoon.TextColor3 = Color3.new(0, 0, 0)
+Lumbertycoon.TextSize = 14
+Lumbertycoon.TextTransparency = 1
+
+TextButton_2.Parent = Lumbertycoon
+TextButton_2.BackgroundColor3 = Color3.new(0.729412, 0, 0)
+TextButton_2.BorderColor3 = Color3.new(0.0823529, 0.87451, 0.027451)
+TextButton_2.BorderSizePixel = 5
+TextButton_2.Position = UDim2.new(1.21000004, 0, 3.29999995, 0)
+TextButton_2.Size = UDim2.new(0, 68, 0, 28)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.LineHeight = 1.2000000476837
+TextButton_2.Text = "Dirt"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = Lumbertycoon
+TextButton_3.BackgroundColor3 = Color3.new(0.729412, 0, 0)
+TextButton_3.BorderColor3 = Color3.new(0.0823529, 0.87451, 0.027451)
+TextButton_3.BorderSizePixel = 5
+TextButton_3.Position = UDim2.new(1.67000008, 0, 3.29999995, 0)
+TextButton_3.Size = UDim2.new(0, 61, 0, 28)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.LineHeight = 1.2000000476837
+TextButton_3.Text = "Blood"
+TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = Lumbertycoon
+TextButton_4.BackgroundColor3 = Color3.new(0.729412, 0, 0)
+TextButton_4.BorderColor3 = Color3.new(0.0823529, 0.87451, 0.027451)
+TextButton_4.BorderSizePixel = 5
+TextButton_4.Position = UDim2.new(2.08500004, 0, 3.29999995, 0)
+TextButton_4.Size = UDim2.new(0, 68, 0, 28)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.LineHeight = 1.2000000476837
+TextButton_4.Text = "Ferry"
+TextButton_4.TextColor3 = Color3.new(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = Lumbertycoon
+TextButton_5.BackgroundColor3 = Color3.new(0.729412, 0, 0)
+TextButton_5.BorderColor3 = Color3.new(0.0823529, 0.87451, 0.027451)
+TextButton_5.BorderSizePixel = 5
+TextButton_5.Position = UDim2.new(2.08500004, 0, 4.38000011, 0)
+TextButton_5.Size = UDim2.new(0, 68, 0, 28)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.LineHeight = 1.2000000476837
+TextButton_5.Text = "Syntax"
+TextButton_5.TextColor3 = Color3.new(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = Lumbertycoon
+TextButton_6.BackgroundColor3 = Color3.new(0.729412, 0, 0)
+TextButton_6.BorderColor3 = Color3.new(0.0823529, 0.87451, 0.027451)
+TextButton_6.BorderSizePixel = 5
+TextButton_6.Position = UDim2.new(1.67000008, 0, 4.38000011, 0)
+TextButton_6.Size = UDim2.new(0, 61, 0, 28)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.LineHeight = 1.2000000476837
+TextButton_6.Text = "ADMIN"
+TextButton_6.TextColor3 = Color3.new(0, 0, 0)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = Lumbertycoon
+TextButton_7.BackgroundColor3 = Color3.new(0.729412, 0, 0)
+TextButton_7.BorderColor3 = Color3.new(0.0823529, 0.87451, 0.027451)
+TextButton_7.BorderSizePixel = 5
+TextButton_7.Position = UDim2.new(1.21000004, 0, 4.38000011, 0)
+TextButton_7.Size = UDim2.new(0, 68, 0, 28)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.LineHeight = 1.2000000476837
+TextButton_7.Text = "light X"
+TextButton_7.TextColor3 = Color3.new(0, 0, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14
+TextButton_7.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.BackgroundColor3 = Color3.new(0.0627451, 0.588235, 0.00392157)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 1, 0)
+ScrollingFrame.Size = UDim2.new(0, 88, 0, 111)
+ScrollingFrame.Visible = false
+ScrollingFrame.ScrollBarThickness = 0
+
+localplr.Name = "localplr"
+localplr.Parent = ScrollingFrame
+localplr.BackgroundColor3 = Color3.new(0.0941177, 0.886275, 0.0941177)
+localplr.BorderColor3 = Color3.new(0.933333, 0, 0)
+localplr.BorderSizePixel = 5
+localplr.Position = UDim2.new(0.163043469, 0, 0.0789474621, 0)
+localplr.Size = UDim2.new(0, 61, 0, 18)
+localplr.Font = Enum.Font.Cartoon
+localplr.Text = "Local"
+localplr.TextColor3 = Color3.new(0, 0, 0)
+localplr.TextSize = 20
+
+lumbertycoon.Name = "lumbertycoon"
+lumbertycoon.Parent = ScrollingFrame
+lumbertycoon.BackgroundColor3 = Color3.new(0.0941177, 0.886275, 0.0941177)
+lumbertycoon.BorderColor3 = Color3.new(0.933333, 0, 0)
+lumbertycoon.BorderSizePixel = 5
+lumbertycoon.Position = UDim2.new(0.163043469, 0, 0.421052724, 0)
+lumbertycoon.Size = UDim2.new(0, 61, 0, 18)
+lumbertycoon.Font = Enum.Font.Cartoon
+lumbertycoon.Text = "Lumber"
+lumbertycoon.TextColor3 = Color3.new(0, 0, 0)
+lumbertycoon.TextSize = 20
+lumbertycoon.TextWrapped = true
+
+ImageButton.Parent = ImageLabel
+ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton.BackgroundTransparency = 1
+ImageButton.Position = UDim2.new(0, 0, -0.0201342274, 0)
+ImageButton.Size = UDim2.new(0, 53, 0, 44)
+ImageButton.Image = "rbxassetid://2246054658"
+
+TextLabel.Parent = ImageLabel
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.171003714, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 170, 0, 38)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.LineHeight = 1.2000000476837
+TextLabel.Text = "JJK HUB"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+--[[
+	 Scripts:
+--]]
+
+local function IPKHQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	local main = script.Parent.Parent.Parent.ImageLabel
+	stopper = false
+	open = false
+	
+	button.MouseButton1Click:Connect(function()
+		if stopper == false then
+			if open == false then
+				stopper = true
+				
+				main.Visible = true
+				local TweenService = game:GetService"TweenService"
+	            local tween = TweenService:Create(
+	            main,--whatever should be tweened
+	            TweenInfo.new(0.5),--how the tween should act
+	            {
+	            Position = UDim2.new(0.412, 0,0.399, 0)--set rotation to whatever it should be
+	            }
+	            )
+	            tween:Play()
+	            wait(0.5)
+	            open = true
+	            stopper = false
+	            button.Text = "Close"
+			        else
+				stopper = true
+				main.Visible = true
+				local TweenService = game:GetService"TweenService"
+	            local tween = TweenService:Create(
+	            main,--whatever should be tweened
+	            TweenInfo.new(0.5),--how the tween should act
+	            {
+	            Position = UDim2.new(2, 0,0.399, 0)--set rotation to whatever it should be
+	            }
+	            )
+	            tween:Play()
+	            wait(0.5)
+	            main.Visible = false
+	            button.Text = "Open"
+	            open = false
+	            stopper = false
+			end
+		end
+	end)
+end
+coroutine.wrap(IPKHQ_fake_script)()
+local function WQBTBUP_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	local player = game.Players.LocalPlayer
+	
+	wait(0.0001)
+	
+	script.Parent.Text = "hello, ".. (player.Name)
+end
+coroutine.wrap(WQBTBUP_fake_script)()
+local function PEAIZFY_fake_script() -- Home_2.LocalScript 
+	local script = Instance.new('LocalScript', Home_2)
+
+	local Players = game:GetService("Players")
+	 
+	local player = Players.LocalPlayer
+	 
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	 
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0, 100, 0, 100)
+end
+coroutine.wrap(PEAIZFY_fake_script)()
+local function PYLMV_fake_script() -- Walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', Walkspeed)
+
+	local plr = game.Players.LocalPlayer
+	local box = script.Parent
+	
+	while true do wait()
+	    plr.Character.Humanoid.WalkSpeed = box.Text
+	end
+end
+coroutine.wrap(PYLMV_fake_script)()
+local function FFTA_fake_script() -- Walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', Walkspeed)
+
+	local textBox = script.Parent
+	function PositiveIntegerMask(text)
+	return text:gsub("%D+", "")
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()     -- Replace the text with the formatted text:     
+	textBox.Text = PositiveIntegerMask(textBox.Text) 
+	end)
+end
+coroutine.wrap(FFTA_fake_script)()
+local function IBQB_fake_script() -- jumppower_2.LocalScript 
+	local script = Instance.new('LocalScript', jumppower_2)
+
+	local plr = game.Players.LocalPlayer
+	local box = script.Parent
+	
+	box.FocusLost:Connect(function()
+	    plr.Character.Humanoid.JumpPower = script.Parent.Text
+	end)
+end
+coroutine.wrap(IBQB_fake_script)()
+local function YZZUCQF_fake_script() -- jumppower_2.LocalScript 
+	local script = Instance.new('LocalScript', jumppower_2)
+
+	local textBox = script.Parent
+	function PositiveIntegerMask(text)
+	return text:gsub("%D+", "")
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()     -- Replace the text with the formatted text:     
+	textBox.Text = PositiveIntegerMask(textBox.Text) 
+	end)
+end
+coroutine.wrap(YZZUCQF_fake_script)()
+local function VJWDKJJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/GpC7XR4P",true))()
+	end)
+end
+coroutine.wrap(VJWDKJJ_fake_script)()
+local function UORWN_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/Z07GUfgv",true))()
+	end)
+end
+coroutine.wrap(UORWN_fake_script)()
+local function MGUWAE_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/gr0xqDKn",true))()
+	end)
+end
+coroutine.wrap(MGUWAE_fake_script)()
+local function CSBEJK_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		 loadstring(game:HttpGet(('https://pastebin.com/raw/wWxsHtxJ'),true))()
+	end)
+end
+coroutine.wrap(CSBEJK_fake_script)()
+local function VNPA_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		 loadstring(game:HttpGet("https://pastebin.com/raw/LFfvJqsD", true))()
+	end)
+end
+coroutine.wrap(VNPA_fake_script)()
+local function EOSC_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet'https://pastebin.com/raw/9KKAee2X')()
+	end)
+end
+coroutine.wrap(EOSC_fake_script)()
+local function OTOR_fake_script() -- localplr.LocalScript 
+	local script = Instance.new('LocalScript', localplr)
+
+	local games = script.Parent.Parent.Parent.Games
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		games.Localplr.Visible = true
+	    games.Lumbertycoon.Visible = false
+	    games.Home.Visible = false
+	end)
+end
+coroutine.wrap(OTOR_fake_script)()
+local function YCYB_fake_script() -- lumbertycoon.LocalScript 
+	local script = Instance.new('LocalScript', lumbertycoon)
+
+	local games = script.Parent.Parent.Parent.Games
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		games.Localplr.Visible = false
+	    games.Lumbertycoon.Visible = true
+	    games.Home.Visible = false
+	end)
+end
+coroutine.wrap(YCYB_fake_script)()
+local function ZWLPDZ_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local button = script.Parent
+	local main = script.Parent.Parent.Frame.ScrollingFrame
+	stopper = false
+	open = false
+	
+	button.MouseButton1Click:Connect(function()
+		if stopper == false then
+			if open == false then
+				stopper = true
+				
+				main.Visible = true
+				local TweenService = game:GetService"TweenService"
+	            local tween = TweenService:Create(
+	            main,--whatever should be tweened
+	            TweenInfo.new(0.5),--how the tween should act
+	            {
+	            Size = UDim2.new(0, 88,0, 111)--set rotation to whatever it should be
+	            }
+	            )
+	            tween:Play()
+	            
+	            local tween = TweenService:Create(
+	            button,--whatever should be tweened
+	            TweenInfo.new(0.2),--how the tween should act
+	            {
+	            Rotation = 180 --set rotation to whatever it should be
+	            }
+	            )
+	            tween:Play()
+	            
+	            open = true
+	            stopper = false
+			        else
+				stopper = true
+				main.Visible = true
+				local TweenService = game:GetService"TweenService"
+	            local tween = TweenService:Create(
+	            main,--whatever should be tweened
+	            TweenInfo.new(0.5),--how the tween should act
+	            {
+	            Size = UDim2.new(0, 0,0, 111)--set rotation to whatever it should be
+	            }
+	            )
+	            tween:Play()
+	            
+	            local tween = TweenService:Create(
+	            button,--whatever should be tweened
+	            TweenInfo.new(0.2),--how the tween should act
+	            {
+	            Rotation = 0 --set rotation to whatever it should be
+	            }
+	            )
+	            tween:Play()
+	            wait(0.5)
+	            main.Visible = false
+	            stopper = false
+	            open = false
+			end
+		end
+	end)
+end
+coroutine.wrap(ZWLPDZ_fake_script)()
+local function UUOIFLD_fake_script() -- JJkhubrevamp.LocalScript 
+	local script = Instance.new('LocalScript', JJkhubrevamp)
+
+	script.Parent.ImageLabel.Frame.ScrollingFrame.Visible = false
+	script.Parent.ImageLabel.Visible = false
+	script.Parent.ImageLabel.Position = UDim2.new(2, 0,0.399, 0)
+	script.Parent.ImageLabel.Frame.ScrollingFrame.Size = UDim2.new(0, 0,0, 111)
+	script.Parent.ImageLabel.Frame.Games.Home.Visible = true
+	script.Parent.ImageLabel.Frame.Games.Localplr.Visible = false
+	script.Parent.ImageLabel.Frame.Games.Lumbertycoon.Visible = false
+	
+end
+coroutine.wrap(UUOIFLD_fake_script)()
